@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link href="../dist/output.css" rel="stylesheet">
+  
+</head>
+<body>
+
+  <header class="h-screen pb-20 lg:pb-72 ">
+    <nav class="flex justify-between p-7">
+      <div>
+        <img src="../images/logo.svg" alt="logo">
+      </div>
+
+      <div class="lg:hidden">
+        <a href="#" id="hamburger"><img src="../images/icon-hamburger.svg" alt="icon hamburger menu"></a>
+      </div>
+
+
+      <div class="hidden lg:block">
+        <ul class="flex space-x-6 text-white font-thin">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact" class="bg-white text-black p-3 px-7 rounded-full uppercase">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    
+      <ul class="text-center text-slate-500 w-11/12 py-6 mx-auto space-y-6 bg-white px-5 hidden" id="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="bg-yellow-300 p-3 px-7 rounded-full uppercase">Contact</a></li>
+      </ul>
+
+    <div class="text-center space-y-7">
+      <h1 class="text-white text-4xl uppercase pt-20 tracking-widest lg:text-5xl">We are creatives</h1>
+      <div class="py-5">
+        <img src="../images/icon-arrow-down.svg" alt="arrow down" class="mx-auto">
+      </div>
+    </div>
+
+
+  </header>
+
+  <main class="lg:grid lg:grid-cols-2 place-items-center">
+    <div class="w-full lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2">
+      <img src="../images/mobile/image-transform.jpg" alt="egg with yellow background" class="lg:hidden w-full">
+      <img src="../images/desktop/image-transform.jpg" alt="egg with yellow background" class="hidden lg:block w-full">
+    </div>
+
+    <section class=" text-center p-4 pt-10 space-y-4 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2 lg:p-0 " id="about">
+      <h2 class="text-3xl font-extrabold lg:text-4xl">Transform your <br> brand</h2>
+      <p class="text-slate-400 font-thin lg:w-2/3 lg:mx-auto lg:text-left">We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you.</p>
+      <a href="#" class="uppercase tracking-wide border-b-2 border-b-yellow-300 inline-block">Learn More</a>
+    </section>
+
+    <div class="py-10 lg:py-0 w-full">
+      <img src="../images/mobile/image-stand-out.jpg" alt="red cup" class="lg:hidden w-full">
+      <img src="../images/desktop/image-stand-out.jpg" alt="red cup" class="hidden lg:block h-full w-full">
+    </div>
+
+    <section class=" text-center p-4 space-y-4">
+      <h2 class="text-3xl font-extrabold lg:text-4xl">Stand out to the right <br class="hidden lg:block"> audience</h2>
+      <p class="text-slate-400 font-thin lg:w-2/3 lg:mx-auto lg:text-left">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
+      <a href="#" class="uppercase tracking-wide border-b-2 border-b-orange-700 inline-block">Learn More</a>
+    </section>
+
+    <section class=" text-center p-4 space-y-4 bg-cherry pt-96 mt-10 w-screen lg:p-0 lg:pt-96 lg:m-0 lg:w-full lg:h-full lg:pb-10" id="services">
+      <h2 class="text-3xl font-extrabold opacity-50">Graphic design</h2>
+      <p class="opacity-70 text-sm pb-5 lg:w-2/5 lg:mx-auto lg:text-md">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients attention.</p>
+    </section>
+
+    <section class=" text-center p-4 space-y-4 bg-mandarina pt-96 lg:p-0 lg:pt-96 lg:m-0 lg:w-full lg:h-full lg:pb-10 flex flex-col justify-end">
+      <h2 class="text-3xl font-extrabold opacity-50">Photography</h2>
+      <p class="opacity-70 text-sm pb-5 lg:w-2/5 lg:mx-auto lg:text-md">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+    </section>
+
+    <section class=" text-center p-4 space-y-14 pt-10 lg:col-span-2">
+      <h3 class="text-lg text-gray-500 uppercase tracking-widest lg:pt-24 lg:text-xl">Client testimonials</h3>
+      <div class="lg:flex lg:justify-center lg:items-center space-y-14 lg:space-y-0">
+        <article class="space-y-3">
+          <div class="pb-5">
+            <img src="../images/image-emily.jpg" alt="emily" class="mx-auto rounded-full w-3/12">
+          </div>
+          <p class="text-gray-500 pb-5 lg:w-4/5 lg:mx-auto">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <div>
+            <h3 class="text-lg font-extrabold">Emily R.</h3>
+            <p class="text-slate-400 text-sm">Marketing director</p>
+          </div>
+        </article>
+        <article class="space-y-3">
+          <div class="pb-5 lg:pb-0">
+            <img src="../images/image-thomas.jpg" alt="thomas" class="mx-auto rounded-full w-3/12">
+          </div>
+          <p class="text-gray-500 pb-5 lg:w-4/5 lg:mx-auto">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+          <div>
+            <h3 class="text-lg font-extrabold">Thomas S.</h3>
+            <p class="text-slate-400 text-sm">Chief Operating Officer</p>
+          </div>
+        </article>
+        <article class="space-y-3">
+          <div class="pb-5">
+            <img src="../images/image-jennie.jpg" alt="Jennie" class="mx-auto rounded-full w-3/12">
+          </div>
+          <p class="text-gray-500 pb-5 lg:w-4/5 lg:mx-auto">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <div>
+            <h3 class="text-lg font-extrabold">Jennie F.</h3>
+            <p class="text-slate-400 text-sm">Business Owner</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-2 w-full mt-20 lg:row-start-5 lg:col-span-2 lg:grid-cols-4" id="projects">
+      <div class="w-full h-full">
+        <img src="../images/mobile/image-gallery-milkbottles.jpg" alt="milk bottles" class="lg:hidden w-full">
+        <img src="../images/desktop/image-gallery-milkbottles.jpg" alt="milk bottles" class="hidden lg:block">
+      </div>
+      <div class="w-full h-full">
+        <img src="../images/mobile/image-gallery-orange.jpg" alt="orange" class="lg:hidden w-full">
+        <img src="../images/desktop/image-gallery-orange.jpg" alt="orange" class="hidden lg:block">
+      </div>
+      <div class="w-full h-full">
+        <img src="../images/mobile/image-gallery-cone.jpg" alt="ice cream cone" class="lg:hidden w-full">
+        <img src="../images/desktop/image-gallery-cone.jpg" alt="ice cream cone" class="hidden lg:block">
+      </div>
+      <div class="w-full h-full"> 
+        <img src="../images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes" class="lg:hidden w-full">
+        <img src="../images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes" class="hidden lg:block">
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center bg-emerald-300 p-4 py-14" id="contact">
+    <div class="black-logo">
+      <a href="#"><img src="../images/logo.svg" alt="logo" class="mx-auto w-2/4 opacity-70 lg:w-2/6"></a>
+    </div>
+
+    <ul class="flex justify-center space-x-10 py-10 text-slate-600 opacity-70">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+
+    <div class="flex justify-center space-x-6 mt-10 items-center">
+      <a href="#">
+        <img src="../images/icon-facebook.svg" alt="facebook">
+      </a>
+      <a href="#">
+        <img src="../images/icon-instagram.svg" alt="instagram">
+      </a>
+      <a href="#">
+        <img src="../images/icon-twitter.svg" alt="twitter">
+      </a>
+      <a href="#">
+        <img src="../images/icon-pinterest.svg" alt="pinterest">
+      </a>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>
